@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BooleanXpress</title>
+</head>
+
+<body>
+    <div class="app">
+        <video src="video/clideo_editor_510975db3e7943cba20ed23c790fdb10.mp4" autoplay muted loop></video>
+        <div class="container text-center vh-100 d-flex justify-content-center align-items-center">
+            <div>
+                <h1 class="fs-1 px-5 text-white">BooleanXpress: La Tua Via Veloce verso il Mondo
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <button class="accordion fw-bolder fs-4" id="name-acc">nome</button>
+                    <div class="panel p-2">
+                        <label for="name" class="form-control border-0 ">Inserisci il tuo nome</label>
+                        <input class="form-control " type="text" placeholder="Default input"
+                            aria-label="default input example" id="name">
+                    </div>
+                    <button class="accordion fw-bolder fs-4" id="section2">cognome</button>
+                    <div class="panel p-2">
+                        <label for="lastname" class="form-control border-0 ">Inserisci il tuo cognome</label>
+                        <input class="form-control " type="text" placeholder="Default input"
+                            aria-label="default input example" id="lastname">
+                    </div>
+                    <button class="accordion fw-bolder fs-4" id="section4">anni</button>
+                    <div class="panel p-2">
+                        <label for="age" class="form-control border-0 ">Inserisci la tua età</label>
+                        <input class="form-control " type="text" placeholder="Default input"
+                            aria-label="default input example" id="age">
+                    </div>
+                    <button class="accordion fw-bolder fs-4" id="section5">viaggio</button>
+                    <div class="panel p-2">
+                        <label for="km" class="form-control border-0 ">Inserisci i chilometri da percorrere</label>
+                        <input class="form-control " type="text" placeholder="Default input"
+                            aria-label="default input example" id="km">
+                    </div>
+                    <div class="text-center p-3">
+                        <button type="button" class="btn btn-outline-dark fs-4" id="vai">Vai!</button>
+                        <button type="reset" class="btn btn-outline-dark  m-3 fs-4">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center vh-100 d-flex justify-content-center align-items-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="bg-danger">#</th>
+                        <th scope="col" class="bg-danger" >Nome</th>
+                        <th scope="col" class="bg-danger">Cognome</th>
+                        <th scope="col" class="bg-danger">Età</th>
+                        <th scope="col" class="bg-danger">Km</th>
+                        <th scope="col" class="bg-danger">Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="name-ticket"></td>
+                        <td id="lastname-ticket"></td>
+                        <td id="age-ticket"></td>
+                        <td id="km-ticket"></td>
+                        <td id="expense-ticket"></td>
+                    </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
