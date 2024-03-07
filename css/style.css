@@ -62,6 +62,8 @@ body {
 }
 
 .panel {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-image: url(../img/Flame_Red_1_1024x1024.webp);
   background-size: cover;
   padding: 0 18px;
@@ -71,6 +73,10 @@ body {
 }
 
 /* utility */
+input {
+  background-image: url(../img/360_F_366101427_8yazUJK82fDrLi4YtpnQO3DJ4dTygxoe.jpg);
+  background-size: cover;
+}
 .bg-dan-mod {
   background-image: url(../img/Flame_Red_1_1024x1024.webp);
   background-size: cover;
