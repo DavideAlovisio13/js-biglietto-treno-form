@@ -30,7 +30,6 @@ button.addEventListener('click', function () {
   if (isNaN(userKm) || isNaN(userAge)) {
     alert('ATTENZIONE! Il valore deve essere un numero')
   } else {
-    alert('Valori registrati correttamente, premi "OK" per conoscere il prezzo del tuo biglietto.')
   }
   if (userAge < 18) {
     userExpense = price * 0.80;
@@ -39,7 +38,11 @@ button.addEventListener('click', function () {
   } else {
     userExpense = price;
   }
-document.getElementById('expense-ticket').innerHTML = userExpense.toFixed(2);
+  document.getElementById('expense-ticket').innerHTML = userExpense.toFixed(2);
+  document.getElementById('ticket').scrollIntoView({
+    behavior: 'smooth'
+  });
+
 
 
 })

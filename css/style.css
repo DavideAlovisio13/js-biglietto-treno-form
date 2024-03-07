@@ -1,11 +1,20 @@
+body {
+  font-family: "Madimi One", sans-serif;
+}
+
+
 .accordion {
-  background-color: #B45A3A;
-  color: #444;
+  background-image: url('../img/2012222.png');
+  background-size: cover;
+  font-family: "Special Elite", system-ui;
+  background-color: #b45a3a;
+  color: white;
+  border: none;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: left;
   outline: none;
   font-size: 15px;
@@ -14,7 +23,7 @@
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  opacity: 0.7;
 }
 
 .panel {
@@ -25,20 +34,28 @@
   transition: max-height 0.2s ease-out;
 }
 
-
 app {
   position: relative;
 }
 
- .btn-outline-dark {
-  background-color: #B45A3A;
-  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.4);
- }
+.bg-dan-mod {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 48, 25, 1) 0%,
+    rgba(207, 4, 4, 1) 100%
+  ); 
+}
 
- .table {
-    width: 100%;
-    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.4);
- }
+.btn-outline-dark {
+  background-color: #b45a3a;
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.4);
+  color:  white;
+}
+
+.table {
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.4);
+}
 
 .container {
   position: relative;
@@ -50,5 +67,13 @@ video {
   height: 100vh;
   object-fit: cover;
   position: fixed;
+  top: 0;
+  bottom: 0;
   z-index: 0;
+  opacity: 0.7;
 }
+
+h1 {
+  font-size: 4em;  
+}
+

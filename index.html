@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>BooleanXpress</title>
@@ -14,57 +23,55 @@
         <video src="video/clideo_editor_510975db3e7943cba20ed23c790fdb10.mp4" autoplay muted loop></video>
         <div class="container text-center vh-100 d-flex justify-content-center align-items-center">
             <div>
-                <h1 class="fs-1 px-5 text-white">BooleanXpress: La Tua Via Veloce verso il Mondo
+                <h1 class=" px-5 text-white a">BooleanXpress: La Tua Via Veloce verso il Mondo
                 </h1>
             </div>
             <div class="row">
                 <div class="col-12 ">
-                    <button class="accordion fw-bolder fs-4" id="name-acc">nome</button>
+                    <button class="accordion fw-bolder fs-4 .special-elite-regular" id="name-acc">nome</button>
                     <div class="panel p-2">
-                        <label for="name" class="form-control border-0 ">Inserisci il tuo nome</label>
-                        <input class="form-control " type="text" placeholder="Default input"
-                            aria-label="default input example" id="name">
+                        <label for="name" class=" bg-danger form-control border-0 ">Inserisci il tuo nome</label>
+                        <input class="form-control " type="text" aria-label="default input example" id="name">
                     </div>
                     <button class="accordion fw-bolder fs-4" id="section2">cognome</button>
                     <div class="panel p-2">
-                        <label for="lastname" class="form-control border-0 ">Inserisci il tuo cognome</label>
-                        <input class="form-control " type="text" placeholder="Default input"
-                            aria-label="default input example" id="lastname">
+                        <label for="lastname" class="bg-danger form-control border-0 ">Inserisci il tuo cognome</label>
+                        <input class="form-control " type="text" aria-label="default input example" id="lastname">
                     </div>
                     <button class="accordion fw-bolder fs-4" id="section4">anni</button>
                     <div class="panel p-2">
-                        <label for="age" class="form-control border-0 ">Inserisci la tua età</label>
-                        <input class="form-control " type="text" placeholder="Default input"
-                            aria-label="default input example" id="age">
+                        <label for="age" class=" bg-danger form-control border-0 ">Inserisci la tua età</label>
+                        <input class="form-control " type="text" aria-label="default input example" id="age">
                     </div>
                     <button class="accordion fw-bolder fs-4" id="section5">viaggio</button>
                     <div class="panel p-2">
-                        <label for="km" class="form-control border-0 ">Inserisci i chilometri da percorrere</label>
-                        <input class="form-control " type="text" placeholder="Default input"
-                            aria-label="default input example" id="km">
+                        <label for="km" class="bg-danger form-control border-0 ">Inserisci i chilometri da
+                            percorrere</label>
+                        <input class="form-control " type="text" aria-label="default input example" id="km">
                     </div>
                     <div class="text-center p-3">
-                        <button type="button" class="btn btn-outline-dark fs-4" id="vai">Vai!</button>
+                        <button type="button" class="btn btn-outline-dark fs-4" id="vai" href="ticket">Vai!</button>
                         <button type="reset" class="btn btn-outline-dark  m-3 fs-4">Annulla</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container text-center vh-100 d-flex justify-content-center align-items-center">
-            <table class="table">
+            <table class="table" id="ticket">
                 <thead>
                     <tr>
-                        <th scope="col" class="bg-danger">#</th>
-                        <th scope="col" class="bg-danger" >Nome</th>
-                        <th scope="col" class="bg-danger">Cognome</th>
-                        <th scope="col" class="bg-danger">Età</th>
-                        <th scope="col" class="bg-danger">Km</th>
-                        <th scope="col" class="bg-danger">Prezzo</th>
+                        <th scope="col" class="bg-dan-mod"><i class="fa-solid fa-ticket fa-2xl"
+                                style="color: #ffffff;"></i></th>
+                        <th scope="col" class="bg-dan-mod">Nome</th>
+                        <th scope="col" class="bg-dan-mod">Cognome</th>
+                        <th scope="col" class="bg-dan-mod">Età</th>
+                        <th scope="col" class="bg-dan-mod">Km</th>
+                        <th scope="col" class="bg-dan-mod">Prezzo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row"></th>
                         <td id="name-ticket"></td>
                         <td id="lastname-ticket"></td>
                         <td id="age-ticket"></td>
