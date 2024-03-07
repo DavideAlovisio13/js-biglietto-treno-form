@@ -16,7 +16,6 @@ for (i = 0; i < acc.length; i++) {
 
 let button = document.getElementById('vai');
 button.addEventListener('click', function () {
-
   let userName = (document.getElementById('name').value);
   document.getElementById('name-ticket').innerHTML = userName;
   let userLastName = (document.getElementById('lastname').value);
