@@ -60,8 +60,11 @@ button.addEventListener('click', function () {
   let price = userKm * 0.21;
   let userExpense = 'value';
   if (isNaN(userKm) || isNaN(userAge)) {
-    alert('ATTENZIONE! Il valore deve essere un numero')
+    alert ('ATTENZIONE! Il valore deve essere un numero')
+    let disNn = document.getElementById('d-n');
+    disNn.classList.add('d-none')
   } else {
+
   }
   if (userAge < 18) {
     userExpense = price * 0.80;
@@ -89,3 +92,4 @@ button.addEventListener('click', function () {
     behavior: 'smooth'
   });
 })
+
