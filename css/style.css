@@ -1,6 +1,10 @@
 /* general */
+html ::-webkit-scrollbar {
+  display: none;
+}
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
+  color: white;
 }
 
 app {
@@ -19,7 +23,7 @@ body {
 /* videos */
 .main-vd {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   object-fit: cover;
   position: fixed;
   top: 0;
@@ -73,6 +77,14 @@ body {
 }
 
 /* utility */
+.row {
+  min-width: 310px;
+}
+h1 span{
+  color: #b45a3a;
+  position: relative;
+}
+
 input {
   background-image: url(../img/360_F_366101427_8yazUJK82fDrLi4YtpnQO3DJ4dTygxoe.jpg);
   background-size: cover;
